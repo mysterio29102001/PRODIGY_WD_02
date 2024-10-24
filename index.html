@@ -3,29 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stop Watch</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css" />
   </head>
   <body>
-    </div>
-    <!-- container start -->
     <div class="container">
-      <p class="display" id="display">00 : 00 : 00 : 000</p>
-      <div class="controls">
-        <button class="flag" id="flag">
-          <span class="flag-icon"></span>
-        </button>
-        <button class="start" id="start">
-          <span class="start-icon" id="start-icon"></span>
-        </button>
-        <button class="reset" id="reset">
-          <span class="reset-icon"></span>
-        </button>
+      <div class="wrapper">
+        <p>
+          <span class="mins">00</span>:<span class="seconds">00</span>:<span
+            class="tens"
+            >00</span
+          >
+        </p>
+        <br />
+        <button class="btn-start">Start</button>
+        <button class="btn-stop">Stop</button>
+        <button class="btn-reset">Reset</button>
       </div>
-
-      <div class="lap" id="lap"></div>
     </div>
-    <!-- container end -->
+
+    <script src="stopwatch.js"></script>
   </body>
 </html>
